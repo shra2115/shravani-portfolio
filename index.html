@@ -23,9 +23,28 @@ color:#333;
 transition:0.4s;
 }
 
+/* DARK MODE */
+
 .dark{
 background:#121212;
 color:white;
+}
+
+.dark section{
+background:#121212;
+}
+
+.dark nav{
+background:#000;
+}
+
+.dark .card{
+background:#1e1e1e;
+color:white;
+}
+
+.dark footer{
+background:#000;
 }
 
 /* HEADER */
@@ -83,10 +102,6 @@ margin:auto;
 padding:60px 20px;
 }
 
-h2{
-margin-bottom:20px;
-}
-
 /* SKILLS */
 
 .skills span{
@@ -112,10 +127,7 @@ padding:20px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
-}
-
-.dark .card{
-background:#1e1e1e;
+cursor:pointer;
 }
 
 .card:hover{
@@ -158,10 +170,9 @@ cursor:pointer;
 
 </head>
 
-
 <body>
 
-<button class="toggle" onclick="toggleDark()">Dark Mode</button>
+<button class="toggle" onclick="toggleDark()">🌙 Dark Mode</button>
 
 <header>
 
@@ -169,11 +180,11 @@ cursor:pointer;
 
 <p>AI Engineer | Machine Learning | Data Science</p>
 
-<a href="Shravani_Resume.pdf.pdf" target="_blank">
+<a href="Shravani_Resume.pdf" target="_blank">
 <button class="btn">View Resume</button>
 </a>
 
-<a href="Shravani_Resume.pdf.pdf" download>
+<a href="Shravani_Resume.pdf" download>
 <button class="btn">Download Resume</button>
 </a>
 
@@ -235,56 +246,58 @@ AI assistants and RAG solutions to solve real-world problems.
 
 <div class="projects">
 
-<div class="card">
+<!-- PROJECT 1 -->
+
+<div class="card"
+onclick="window.open('https://github.com/shra2115','_blank')">
 
 <h3>Event Intelligence RAG System</h3>
 
 <p>
-
-Developed a Retrieval-Augmented Generation system to analyze
-operational alarm and incident data using SQLite, ChromaDB,
-and transformer embeddings.
-
+RAG system to analyze emergency incidents using ChromaDB,
+SQLite and transformer embeddings.
 </p>
 
 </div>
 
-<div class="card">
+<!-- PROJECT 2 -->
+
+<div class="card"
+onclick="window.open('https://github.com/shra2115','_blank')">
 
 <h3>AI Assistant for Visually Impaired</h3>
 
 <p>
-
-AI-powered assistant application with object detection,
-speech processing and navigation using YOLO, OpenCV
-and TensorFlow Lite.
-
+AI assistant with object detection, speech processing and
+navigation using YOLO, OpenCV and TensorFlow Lite.
 </p>
 
 </div>
 
-<div class="card">
+<!-- PROJECT 3 -->
+
+<div class="card"
+onclick="window.open('https://github.com/shra2115','_blank')">
 
 <h3>Insurance Claim Prediction</h3>
 
 <p>
-
 Machine learning model to predict insurance claim probability
-using feature engineering and model evaluation.
-
+using feature engineering and evaluation.
 </p>
 
 </div>
 
-<div class="card">
+<!-- PROJECT 4 -->
+
+<div class="card"
+onclick="window.open('https://github.com/shra2115','_blank')">
 
 <h3>Forest Cover Prediction</h3>
 
 <p>
-
-ML classification model to predict forest cover types using
-environmental and geographical datasets.
-
+ML model to classify forest cover types using environmental
+and geographical data.
 </p>
 
 </div>
@@ -300,17 +313,11 @@ environmental and geographical datasets.
 
 <div class="contact">
 
-<a href="mailto:shravanidevarakonda2@gmail.com">
-📧 Email
-</a>
+<a href="mailto:shravanidevarakonda2@gmail.com">📧 Email</a>
 
-<a href="https://github.com/shra2115" target="_blank">
-💻 GitHub
-</a>
+<a href="https://github.com/shra2115" target="_blank">💻 GitHub</a>
 
-<a href="https://www.linkedin.com/in/shravani-dg-9855aa227/" target="_blank">
-🔗 LinkedIn
-</a>
+<a href="https://www.linkedin.com/in/shravani-dg-9855aa227/" target="_blank">🔗 LinkedIn</a>
 
 </div>
 
@@ -327,9 +334,7 @@ environmental and geographical datasets.
 <script>
 
 function toggleDark(){
-
 document.body.classList.toggle("dark")
-
 }
 
 </script>
